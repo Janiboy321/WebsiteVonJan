@@ -84,7 +84,7 @@
         }
 
         .wueste{
-            background-color: black;
+            background-color: #04060f;
             padding: 16px;
             display: flex;
             justify-content: center;
@@ -135,6 +135,38 @@
             display: flex;
             justify-content: space-between;
         }
+
+        .title{
+            color: rgb(30, 198, 158);
+        }
+
+        .aboutMe{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .picture-of-me{
+            width: 30%;
+            MIN-width: 30%;
+        }
+
+        .text-about-me{
+            margin-left: 10px;
+            width: 70%;
+            font-family: 'Press Start 2P', cursive;
+            padding: 10px;
+            font-size: 200%;
+            display: flex;
+            justify-content: center;
+            align-items: left;
+            background-color: white;
+            align-items: center;
+        }
+
+        .textAboutMe{
+            font-size: 100%;
+        }
         
     </style>
 
@@ -143,7 +175,7 @@
 <body>
     <div class="header-line-div">
         <h1 class="headline">
-            Jan Rüßing
+            <a class="title" href="index.html">Jan Rüßing</a>
         </h1>
         <div class="menu">
             <h1 class="menu-text">
@@ -155,6 +187,13 @@
     </div>
 
     <div>
+
+        <div class="aboutMe">
+            <img class="picture-of-me" src="me.jpg">
+            <div class="text-about-me"> Herzlich Willkommen! <br> Ich bin Jan und freue mich, dass Sie auf meine Website gefunden haben!
+            </div>
+        </div>
+
         <div class="header-img-div">
             <img class="header-image" src="header.jpg">
         </div>
