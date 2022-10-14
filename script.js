@@ -47,11 +47,11 @@ async function changeCanvas(canv){
             i = 0;
         }
         if(yy + length > window.innerHeight){
-            break;
+            yy = 0;
         }
         ctx.fillStyle = getRandomColor();
         ctx.fillRect(length * i, yy, length, length);
-        await timer(10);
+        await timer(1);
     }
     alert("fertig");
 }
