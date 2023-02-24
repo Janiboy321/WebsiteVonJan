@@ -38,10 +38,11 @@ function addCanvas(){
 
 async function changeCanvas(canv){
     const ctx = canv.getContext("2d");
-    const amountperline = 50;
-    var length = (window.innerWidth - 16)/ amountperline;
+    const amountperline = 500;
+    var length = (window.innerWidth)/ amountperline;
     var yy = 0;
-    for(var i = 0; i < 100; i++){
+    var amount = ((window.innerHeight) / length) * amountperline;
+    for(var i = 0; i < 10000; i++){
         if(i % amountperline == 0 && i != 0){
             yy += length;
             i = 0;
