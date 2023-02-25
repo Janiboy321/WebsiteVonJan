@@ -44,7 +44,7 @@ async function changeCanvas(canv){
     var yy = 0;
     var amount = ((window.innerHeight) / length) * amountperline;
     for(var i = 0; i < 10000; i++){
-        if(i % amountperline == 0 && i != 0){
+        if(i % amountperline + 1 == 0 && i != 0){
             yy += length;
             i = 0;
         }
