@@ -38,7 +38,8 @@ function addCanvas(){
 
 async function changeCanvas(canv){
     const ctx = canv.getContext("2d");
-    const amountperline = 500;
+    const amountperline = parseInt(window.prompt("Bitte geben sie die gewünschte Anzahl der Kästchen pro Zeile an.", "50"));
+    const ac = parseInt(prompt("Bitte geben sie die gewünschte Geschwindigkeit in ms an.", "10"));
     var length = (window.innerWidth)/ amountperline;
     var yy = 0;
     var amount = ((window.innerHeight) / length) * amountperline;
@@ -52,7 +53,7 @@ async function changeCanvas(canv){
         }
         ctx.fillStyle = getRandomColor();
         ctx.fillRect(length * i, yy, length, length);
-        await timer(1);
+        await timer(ac);
     }
     alert("fertig");
 }
